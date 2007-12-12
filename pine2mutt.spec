@@ -1,6 +1,6 @@
 %define name pine2mutt
 %define version 0.3
-%define release 4mdk
+%define release %mkrel 4
 
 Summary: Pine2mutt makes mutt behave somewhat pine-like
 Name: %{name}
