@@ -11,7 +11,6 @@ Patch: %name-makefile.patch.bz2
 License: GPL
 URL: http://www.netmeister.org/apps/pine2mutt/index.html
 Group: Networking/Mail
-Buildroot: %{_tmppath}/%{name}-buildroot
 Buildarch: noarch
 
 %description
