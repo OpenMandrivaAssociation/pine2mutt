@@ -1,6 +1,6 @@
 %define name pine2mutt
 %define version 0.3
-%define release %mkrel 4
+%define release %mkrel 6
 
 Summary: Pine2mutt makes mutt behave somewhat pine-like
 Name: %{name}
