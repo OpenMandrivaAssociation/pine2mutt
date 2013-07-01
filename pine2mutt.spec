@@ -2,7 +2,7 @@
 %define version 0.3
 %define release %mkrel 8
 
-Summary: Pine2mutt makes mutt behave somewhat pine-like
+Summary: Makes mutt behave somewhat pine-like
 Name: %{name}
 Version: %{version}
 Release: %{release}
