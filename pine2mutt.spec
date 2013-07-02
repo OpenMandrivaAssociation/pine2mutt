@@ -1,6 +1,6 @@
 %define name pine2mutt
 %define version 0.3
-%define release %mkrel 8
+%define release  9
 
 Summary: Makes mutt behave somewhat pine-like
 Name: %{name}
@@ -11,7 +11,6 @@ Patch: %name-makefile.patch.bz2
 License: GPL
 URL: http://www.netmeister.org/apps/pine2mutt/index.html
 Group: Networking/Mail
-Buildroot: %{_tmppath}/%{name}-buildroot
 Buildarch: noarch
 
 %description
@@ -21,7 +20,6 @@ enables pine-like sent-mail-folder handling and provides pine-like keybindings
 by sourcing the file "Pine.rc" which comes with mutt.
 
 %prep
-rm -rf $RPM_BUILD_ROOT
 
 %setup
 
@@ -30,17 +28,16 @@ rm -rf $RPM_BUILD_ROOT
 %build
 
 %install
-export DESTDIR=$RPM_BUILD_ROOT
+export DESTDIR=%{buildroot}
 
-mkdir -p $RPM_BUILD_ROOT%_bindir
-mkdir -p $RPM_BUILD_ROOT%_mandir/man1
+mkdir -p %{buildroot}%_bindir
+mkdir -p %{buildroot}%_mandir/man1
 
 make install
 
 %clean
 
 %files
-%defattr(-,root,root)
 %doc README COPYING
 %_bindir/*
 %_mandir/man1/*
