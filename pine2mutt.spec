@@ -9,7 +9,7 @@ Release: %{release}
 Source0: %{name}-%{version}.tar.bz2
 Patch: %name-makefile.patch.bz2
 License: GPL
-URL: http://www.netmeister.org/apps/pine2mutt/index.html
+URL: https://www.netmeister.org/apps/pine2mutt/index.html
 Group: Networking/Mail
 Buildarch: noarch
 
