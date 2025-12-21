@@ -13,6 +13,7 @@ URL: https://www.netmeister.org/apps/pine2mutt/index.html
 Group: Networking/Mail
 Buildarch: noarch
 
+BuildRequires:	make
 %description
 Pine2mutt is a simple perl-script interesting to people who switch from using
 pine to mutt. It converts pine's .addressbook into mutt-readable aliases,
